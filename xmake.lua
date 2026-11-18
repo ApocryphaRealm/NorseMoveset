@@ -1,0 +1,15 @@
+-- NorseMoveset - combos and attack chains as data (header-only library + data). Target moveset_test: the offline test.
+set_project("NorseMoveset")
+set_version("0.1.0")
+set_xmakever("2.8.0")
+add_rules("mode.release")
+set_defaultmode("release")
+set_languages("c++20")
+set_runtimes("MD")
+add_defines("WIN32_LEAN_AND_MEAN", "NOMINMAX", "UNICODE", "_UNICODE")
+add_cxflags("/EHsc", "/W4", "/permissive-", "/utf-8", {force = true})
+
+target("moveset_test")
+    set_kind("binary")
+    add_files("tools/moveset_test.cpp")
+    add_includedirs("include")
