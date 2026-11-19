@@ -36,3 +36,7 @@ NorseRealtimeNative 0.5.23-0.5.27, moved out of its code unchanged.
 0.1.0 tested offline (14 checks) and in game (TEST-RESULT-0.1.0.txt, the Bogmathr dagger chain). Next: AnimSwap
 (conditional moves), NorseInput (held / double-press inputs), NorseConditions on a move, NorsePayload windows for
 cancels, and the AI choosing from the same movesets.
+
+## Licence
+
+GPL-3.0-or-later (see LICENSE).
