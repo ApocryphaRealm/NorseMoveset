@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 - 2026-11-18 - untested
+## 1.0.0 - 2026-11-18 - working
 
 ### Changed
 - The included movesets use the game's own attack animations (Drengr, Rekkr, Berserkr, Bogmathr, Hersir), so nothing else needs installing; the earlier defaults named animations from a separate pack.
