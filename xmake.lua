@@ -1,6 +1,6 @@
 -- NorseMoveset - combos and attack chains as data (header-only library + data). Target moveset_test: the offline test.
 set_project("NorseMoveset")
-set_version("0.1.0")
+set_version("1.0.0")
 set_xmakever("2.8.0")
 add_rules("mode.release")
 set_defaultmode("release")
