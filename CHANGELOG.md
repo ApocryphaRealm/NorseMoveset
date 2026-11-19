@@ -4,3 +4,6 @@
 ### Added
 - Movesets in movesets/*.ini: Class, Rate, ComboWindow, Start.<input>, moves with light/power links, motion, rate, window, impact.
 - include/NorseMoveset.hpp: parser, checks, Library::Choose; _default.ini with the Drengr, Rekkr and Berserkr chains of NorseRealtimeNative.
+
+### Changed
+- The included movesets use the game's own attack animations (Drengr, Rekkr, Berserkr, Bogmathr, Hersir), so nothing else needs installing; the earlier defaults named animations from a separate pack.

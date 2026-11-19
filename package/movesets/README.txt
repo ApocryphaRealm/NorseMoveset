@@ -7,13 +7,13 @@ same [name] replaces an earlier one, so an animation pack can ship a new moveset
 
     [Drengr]
     Class = Drengr                 ; the unit class (the hero's class: Drengr, Rekkr, Berserkr, Bogmathr, ...)
-    Rate = 1.15                    ; play rate of its moves
+    Rate = 1.0                     ; play rate of its moves
     ComboWindow = 0.6              ; seconds after a move ends in which the next press continues the chain
-    Start.light = Slash1           ; the first move for each input (light, power)
-    Start.power = Lunge
-    Slash1 = /Game/.../A_sword_and_shield_slash.A_sword_and_shield_slash | motion SnsSlash | light Slash2 | power Lunge
-    Slash2 = /Game/... | light Slash3
-    Lunge  = /Game/... | motion SnsLunge
+    Start.light = Strike1          ; the first move for each input (light, power)
+    Start.power = Heavy
+    Strike1 = /Game/.../A_Drengr_GC_Attack_Success.A_Drengr_GC_Attack_Success | light Strike2 | power Heavy
+    Strike2 = /Game/... | light Strike1
+    Heavy   = /Game/... | rate 0.85 | impact 0.5
 
 A move: Name = animation path | then any of: light <move> / power <move> (what that press does next), motion <table>
 (the clip's own movement and hit frame, from NorseRealtimeNative), rate <x>, window <seconds>, impact <seconds> (the
